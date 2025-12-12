@@ -1,16 +1,27 @@
-## Hi there 👋
+🚀 Starting a New Project: E91 Entanglement-Based QKD (Qiskit Demo)
 
-<!--
-**ShreeG19/ShreeG19** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+I’m beginning work on a small but exciting project:
+a proof-of-concept implementation of the E91 entanglement-based quantum key distribution protocol using Qiskit.
 
-Here are some ideas to get you started:
+This project will explore:
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+🔗 Creatin Bell pairs (entanglement)
+🎯 Alice and Bob's measurement bases
+📊 Calculating CHSH S-values
+🔐 Using quantum correlations to generate secure keys
+🧪 Testing how noise affects Bell inequality violation
+🛡️ Showing how E91 detects eavesdropping
+
+Right now, the repo is just getting started — I’ll be adding:
+
+ -Code simulations
+ -Qiskit circuits
+ -Visual diagrams
+ -Explanation notes
+ -Results and graphs
+
+This project is mainly for learning, experimenting, and sharing how E91 works in a simple, beginner-friendly way.
+
+More updates coming soon! 🚀
+
+---
