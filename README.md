@@ -24,4 +24,13 @@ This project is mainly for learning, experimenting, and sharing how E91 works in
 
 More updates coming soon! 🚀
 
+
+Day 2: Started Qiskit learning
+Today I got introduced to Qiskit learning.
+I feel this is my first step toward starting my journey in quantum computing.
+I’m excited to explore this field further and learn more along the way.
+
+If you have experience in quantum computing, I’d be happy to hear your story—
+how you started, what helped you the most, and any advice for beginners.
+
 ---
