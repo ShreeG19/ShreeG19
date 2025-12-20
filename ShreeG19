@@ -1,0 +1,63 @@
+What is E91 Entanglement-Based QKD?
+E91 is a quantum key distribution (QKD) protocol proposed by Artur Ekert (1991).
+It uses quantum entanglement to allow two parties (Alice and Bob) to generate a shared secret key in a provably secure way.
+In an E91 Qiskit demo, this protocol is simulated using Qiskit to show how entangled qubits can be used to create secure keys and detect eavesdropping.
+
+Why is E91 used?
+    🔐 1. Unconditional Security
+    
+            Security comes from laws of quantum physics, not math problems.
+            
+            Any eavesdropping disturbs entanglement
+            
+            Disturbance is detectable
+    
+    🔗 2. Uses Quantum Entanglement
+            
+            Alice and Bob share entangled qubit pairs
+            
+            Measurements are strongly correlated
+            
+            These correlations cannot be faked classically
+    
+    🚨 3. Eavesdropper Detection (Bell Test)
+    
+            Uses Bell inequality (CHSH) violation
+            
+            If Eve tries to intercept → Bell violation decreases
+            
+            This instantly signals an attack
+    
+    🧠 4. Device-Independent Security (Conceptually)
+    
+            Security does not rely on trusting devices
+            
+            Only on observed quantum correlations
+            
+            This makes E91 very powerful in theory
+    
+    🧪 5. Why Qiskit Demo?
+    
+            The Qiskit demo is used to:
+            
+            Simulate entangled states
+            
+            Show measurement outcomes
+            
+            Demonstrate key generation
+            
+            Understand attack detection
+            
+            Learn quantum cryptography without real hardware
+
+Where is E91 useful?
+
+        Quantum-secure communication
+        
+        Post-quantum cryptography research
+        
+        Academic learning & simulations
+        
+        Future quantum networks
+        
+        Satellite-based QKD
