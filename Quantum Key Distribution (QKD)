@@ -1,0 +1,31 @@
+What is Quantum Key Distribution (QKD)?
+
+  In simple terms, QKD is a way to share encryption keys so securely that any spying attempt is immediately noticeable.
+  Instead of relying only on math or complex algorithms, QKD uses the laws of quantum physics to protect data.
+
+Why do we need QKD?
+
+    Today’s digital security depends heavily on mathematical problems.
+    But with the rise of quantum computers, many current encryption methods may no longer be safe.
+    
+    QKD solves this by making security physics-based, not assumption-based.
+
+What does QKD actually do?
+    QKD doesn’t send messages.
+    It securely shares the secret key used to encrypt messages.
+    If someone tries to intercept the key:
+       Quantum states change
+       Errors appear
+       The intrusion is detected instantly
+       The key is discarded
+       No guessing. No silent spying.
+
+How is QKD helpful for digital security?
+    Detects eavesdropping in real time
+    Protects encryption keys before data is sent
+    Resistant to quantum computer attacks
+    Adds a strong security layer to existing systems
+    QKD works alongside classical encryption, making communication far more secure.
+
+Why QKD matters
+    In a world moving toward quantum computing, QKD is a future-ready security solution already being explored for:Financial systems, Government communications, Defense and satellite networks
