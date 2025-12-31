@@ -1,0 +1,36 @@
+BB84 is a quantum key distribution (QKD) protocol that enables two parties to securely share encryption keys over an insecure 
+channel using quantum principles. Developed in 1984 by Charles Bennett and Gilles Brassard, it leverages the no-cloning theorem 
+and quantum measurement disturbance to detect eavesdroppers.
+
+​
+Core Purpose
+
+BB84 generates secret keys for symmetric encryption, ensuring information-theoretic security independent of 
+computational assumptions. It addresses vulnerabilities in classical key exchange methods, like those susceptible 
+to future quantum computers breaking RSA. Parties use it whenever secure communication is needed over untrusted 
+links, such as in finance, government, or military applications.
+
+​
+How It Works
+
+Alice sends photons polarized in one of four states (0°, 45°, 90°, 135°) randomly chosen from two bases 
+(+ or ×). Bob measures each photon in a randomly selected basis, then they publicly compare bases—discarding 
+mismatches—and check error rates to detect interception. Surviving bits form the raw key, refined via error 
+correction and privacy amplification.
+
+​
+Key Benefits
+
+Any eavesdropping (e.g., by Eve) disturbs quantum states, introducing detectable errors above 11% quantum 
+bit error rate (QBER), aborting the key if tampered. It provides provable security against all attacks, 
+including those exploiting device imperfections when enhanced. Unlike classical methods, security holds 
+even against unlimited computing power.
+
+​
+Latest Developments
+
+In 2025, efficient-BB84 with optical switches enabled scalable 4-node QKD networks in production 
+environments, supporting metropolitan-scale secure services and minute-scale rekeying over 100 Gbps 
+backbones. Enhancements like decoy states, MDI-QKD, and zero-knowledge proofs bolster it against 
+photon-number-splitting and side-channel attacks. Implementations on platforms like Amazon Braket 
+demonstrate practical quantum simulations.
