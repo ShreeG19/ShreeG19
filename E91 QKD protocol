@@ -1,0 +1,44 @@
+E91 is the Ekert 1991 protocol, a foundational quantum key distribution (QKD) method using quantum 
+entanglement for secure key sharing. It leverages Bell's inequality violations to detect eavesdroppers, 
+offering information-theoretic security rooted in quantum mechanics.
+
+​
+Origin
+
+Artur Ekert proposed E91 in 1991, inspired by the Einstein-Podolsky-Rosen paradox and John Bell's 
+theorem to demonstrate quantum non-locality in cryptography. Unlike BB84, which uses single-photon 
+polarization, E91 employs entangled particle pairs, first demonstrated experimentally that year at 
+the UK Defence Research Agency.
+
+​
+How It Works
+
+A source generates entangled photon pairs (e.g., in a Bell singlet state); Alice and Bob each receive 
+one and randomly measure in one of three bases (e.g., polarization angles 0°, 45°, 90°).
+​ They publicly share basis choices: matching bases yield correlated key bits; mismatched ones test CHSH Bell 
+inequality S=∣E(a,b)+E(a,b′)+E(a′,b)−E(a′,b′)∣S=∣E(a,b)+E(a,b′)+E(a′,b)−E(a′,b′)∣, expecting S>2S>2 (up to 2222) 
+for security.​ Post-processing includes sifting, error correction, and privacy amplification.
+
+​
+Implementations
+
+Early photonic demos used spontaneous parametric down-conversion for pairs, with coincidence detection 
+for synchronization. Modern setups include IBM quantum computers simulating E91, fiber over 50 km at 
+low rates (~few bits/s), and satellite trials. It requires precise timing and low-noise detectors but 
+enables untrusted sources.
+
+​
+Benefits
+
+E91 provides device-independent security via Bell tests, detecting tampering without trusting 
+devices or sources, unlike BB84. It resists man-in-the-middle attacks through entanglement collapse 
+and offers higher theoretical security, ideal for quantum networks. Tradeoffs include lower key 
+rates due to basis inefficiency.
+
+​
+Latest Updates
+
+Ongoing 2025 research analyzes E91 performance in networks, with space-based QKD 
+(e.g., ESA’s EAGLE-1, SealSQ satellites) advancing entanglement protocols like E91/BBM92. 
+Studies emphasize its role in post-quantum cybersecurity amid quantum computing threats.
+​
