@@ -1,0 +1,31 @@
+MDI-QKD stands for Measurement-Device-Independent Quantum Key Distribution, 
+a quantum cryptography protocol that enables secure key sharing between parties 
+without trusting the measurement devices. It addresses vulnerabilities in standard 
+QKD by having two users send quantum states to a central untrusted node for interference 
+and measurement, ensuring security even if detectors are compromised.
+
+​
+Invention Purpose
+
+Traditional QKD protocols like BB84 are susceptible to side-channel attacks on 
+imperfect detectors, which could leak information to eavesdroppers. Invented around 
+2012 (with experimental demos shortly after), MDI-QKD eliminates these "detector 
+loopholes" by design, making it ideal for practical, real-world networks where 
+third-party hardware can't be fully trusted.
+
+​
+Usefulness and Advantages
+
+MDI-QKD offers information-theoretic security, scalable networking via 
+central hubs, and resilience to sophisticated attacks, supporting secure 
+communications over fiber optics up to hundreds of km. It's highly useful 
+for banking, government, and future quantum internet infrastructure, with 
+gigahertz implementations achieving key rates up to kbps over 30-50 dB loss.
+
+​
+Latest Developments
+
+As of 2025, advancements include integration into hybrid networks, asymmetric variants 
+for uneven channel losses, and high-rate systems (e.g., GHz-clocked demos). Recent 2025 
+research focuses on practical deployments and combining with post-quantum crypto for quantum-safe networks.
+​
