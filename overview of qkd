@@ -1,0 +1,11 @@
+Quantum Key Distribution (QKD) is a secure way of sharing encryption keys using the principles 
+of quantum mechanics. Because quantum states change when observed, any eavesdropping attempt 
+is immediately detectable, making the communication fundamentally secure.
+
+BB84, the first QKD protocol, uses polarized photons and random measurement bases to create secure keys and remains the backbone of many real-world QKD systems. 
+E91 improves security by using quantum entanglement and Bell inequality tests to verify genuine quantum correlations. 
+MDI-QKD further strengthens QKD by removing trust in detectors, protecting against side-channel attacks and enabling scalable, long-distance quantum networks.
+
+Overall, QKD offers information-theoretic security that is resistant to quantum computer attacks. 
+While challenges like distance and cost exist, modern protocols such as MDI-QKD are making QKD 
+increasingly practical for applications in telecom, banking, defense, and future quantum internet infrastructure.
