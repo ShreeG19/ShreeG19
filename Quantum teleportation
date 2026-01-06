@@ -1,0 +1,12 @@
+Quantum teleportation is a protocol that transfers an unknown quantum state from one 
+location to another using shared entanglement and a classical communication channel, 
+without moving the physical particle itself. In this process, a sender (Alice) and a receiver 
+(Bob) first share an entangled pair of qubits. Alice then performs a joint Bell-state measurement 
+on the qubit she wants to teleport and her half of the entangled pair, which destroys the original
+state but instantaneously projects Bob’s distant qubit into a related state. Alice sends the result
+of her measurement to Bob using two classical bits, and based on this information Bob applies a
+corresponding quantum operation to his qubit. After this correction, Bob’s qubit becomes an exact 
+replica of the original quantum state Alice had. Quantum teleportation does not transmit matter 
+or energy and never violates the speed of light, but it is a crucial building block for quantum 
+networks, quantum repeaters, and long-distance entanglement-based QKD, enabling secure and scalable 
+quantum communication.
