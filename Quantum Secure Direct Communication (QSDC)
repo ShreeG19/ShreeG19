@@ -1,0 +1,41 @@
+Quantum Secure Direct Communication (QSDC) transmits confidential messages directly over quantum channels 
+using quantum states, with security ensured by real-time eavesdropping detection rather than pre-shared keys. 
+Unlike QKD, which generates keys for later encryption, QSDC encodes the actual message bits into the quantum carriers themselves.
+
+​
+Definition
+
+QSDC protocols send secret data via quantum particles like photons, employing block transmission, 
+orthogonal state encoding, and monitoring to detect interference. Any eavesdropping alters measurable 
+quantum properties, alerting parties before the message decodes.
+
+​
+Purpose
+
+QSDC enables direct, information-theoretically secure message delivery without classical ciphertext or 
+long-term key storage, ideal for high-security scenarios like military or financial communications. 
+It overcomes QKD limitations by avoiding key management overhead.
+
+​
+Benefits in QKD Context
+
+While distinct from QKD, QSDC complements it by providing end-to-end secure data transfer; QKD can 
+secure initial checks, but QSDC extends to direct messaging with similar eavesdropper detection via 
+quantum bit error rates. It supports multi-user networks and repeaters for longer distances.
+
+​
+Example: DL04 Protocol
+
+The Deng-Long (DL04) single-photon protocol splits transmission into blocks: first for security checks 
+via random sampling, then message encoding on verified states. Receiver decodes via measurement after 
+confirmation, as in fiber experiments achieving high fidelity.
+
+​
+How It Works
+
+Security check phase: Sender transmits a block of quantum states (e.g., polarized photons in random bases); receiver measures and announces bases/results publicly for error rate estimation.
+
+Message encoding: On low-error confirmation, sender encodes message bits (e.g., 0 as horizontal polarization, 1 as vertical) into a second block and sends.
+
+Decoding and verification: Receiver measures in announced bases; high correlations confirm no eavesdropping, yielding the direct message without key sifting. Protocols like entanglement-based variants use Bell measurements for added security.
+​
