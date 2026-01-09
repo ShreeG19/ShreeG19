@@ -1,0 +1,56 @@
+Quantum dense coding, also known as superdense coding, is a quantum communication protocol 
+that allows sending two classical bits of information by transmitting just one qubit, provided 
+the sender and receiver share prior entanglement. It doubles the classical communication capacity 
+over a quantum channel using shared quantum resources.
+
+​
+
+Definition :
+
+Quantum dense coding encodes two classical bits (00, 01, 10, or 11) onto one qubit 
+from a pre-shared entangled pair through single-qubit unitary operations. The receiver 
+decodes both bits by jointly measuring the qubit against their half of the entanglement, 
+exploiting quantum correlations.
+
+​
+
+Purpose :
+
+It efficiently boosts data rates in quantum networks where entanglement is available, 
+serving as a primitive for quantum communication protocols and enhancing channel utilization 
+beyond classical limits. Dense coding complements teleportation, forming the basis for scalable 
+quantum repeaters and distributed quantum computing.
+
+​
+
+Benefits in QKD Context :
+
+Dense coding improves entanglement-based QKD by allowing efficient classical message transmission 
+over the quantum channel after key sifting, reducing overhead in hybrid systems. It enables 
+higher-throughput secure communication when paired with QKD-generated keys, optimizing bandwidth 
+in noisy quantum links.
+
+​
+
+Example Scenario :
+
+Alice wants to send "11" to Bob; they share a Bell state 12(∣00⟩+∣11⟩)2
+
+1(∣00⟩+∣11⟩), with Alice holding qubit 0 and Bob qubit 1. ​ Alice applies Z then X 
+gates to her qubit (encoding 11), sends it to Bob, who performs CNOT (qubit 0 control), 
+Hadamard on qubit 0, and measures both qubits to recover "11". 
+
+​
+
+How It Works : 
+
+Share entanglement: Create and distribute a Bell pair, e.g., apply Hadamard to qubit 0 then CNOT (0→1), yielding 12(∣00⟩+∣11⟩)2
+
+1(∣00⟩+∣11⟩). ​
+
+Encode message: Alice applies gates to her qubit based on bits—no op for 00, X for 01, Z for 10, ZX for 11—modifying the joint state predictably.
+
+Transmit qubit: Alice sends her qubit to Bob via quantum channel.
+
+Decode: Bob applies CNOT (received qubit→his qubit), Hadamard on received qubit, then measures both in computational basis;
+outcomes directly give the two bits. Eavesdropping disturbs the state, detectable via error checks
