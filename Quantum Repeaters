@@ -1,0 +1,41 @@
+Quantum repeaters enable long-distance quantum communication by overcoming photon loss and decoherence 
+in optical fibers, using entanglement swapping and quantum memories to extend entanglement across multiple 
+shorter segments. They divide a long link into repeater nodes that purify and swap entanglement without measuring 
+the quantum information, preserving security for protocols like QKD.
+
+​
+Definition
+
+Quantum repeaters are network nodes that relay quantum states via entanglement generation over elementary links, 
+followed by purification to improve fidelity and swapping to connect distant pairs. Unlike classical repeaters, 
+they avoid no-cloning by never amplifying signals directly.
+
+​
+Purpose
+
+Repeaters make practical quantum networks over continental or global scales viable, supporting secure QKD, teleportation, 
+and distributed quantum computing beyond the ~100-500 km repeaterless limit. They eliminate trusted nodes in current long-haul systems.
+
+​
+Benefits for Long-Distance Links
+
+Quantum repeaters achieve polynomial scaling of key rates with distance, versus exponential decay without them, enabling kHz-rate 
+QKD over 10^4 km even with 10^{-3} error rates. They provide end-to-end security without intermediate data exposure.
+
+​
+Example Architecture
+
+In a first-generation repeater chain, Alice and Bob connect via node R: generate entanglement Alice-R and R-Bob, purify noisy 
+pairs at R, then perform Bell-state measurement at R to swap, yielding Alice-Bob entanglement. Repeat across multiple nodes for longer reach.
+
+​
+How It Works
+
+Elementary entanglement: Create Bell pairs over short links (~50-100 km) using photon sources and memories.​
+
+Purification: Locally distill higher-fidelity pairs from multiple noisy ones via interference and detection.​
+
+Swapping: At each repeater, joint measurement (e.g., Bell projection) on two qubits links adjacent segments, teleporting entanglement forward.
+
+End protocol: Final pair enables QKD or teleportation; classical signaling coordinates without revealing data. Advanced generations add error correction for fault tolerance.
+​
