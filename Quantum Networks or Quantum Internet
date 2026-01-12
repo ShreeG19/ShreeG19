@@ -1,0 +1,39 @@
+Quantum networks, often termed the quantum internet, interconnect quantum computers, sensors, 
+and devices via quantum links to share entanglement and relay quantum information globally. They 
+extend QKD and protocols like teleportation beyond point-to-point, enabling distributed quantum computing and sensing.
+
+​
+Definition
+
+A quantum internet comprises nodes with quantum processors/memories linked by quantum repeaters and 
+channels, distributing entanglement on demand for applications like blind quantum computing. Unlike 
+classical internet, it preserves fragile quantum states without measurement until use.
+
+​
+Purpose
+
+Quantum networks provide unbreakable security for communication, ultra-precise distributed sensing 
+(e.g., gravitational waves), and modular quantum computing across distant hardware. They aim for universal 
+entanglement routing, with layers for memory, repeaters, end-end links, and applications.
+
+​
+Key Components
+Quantum repeaters: Bridge lossy links via purification/swapping.​
+
+Entanglement sources: Generate/distribute Bell pairs.​
+
+Quantum memories: Store qubits for synchronization.​
+
+Switches/routers: Direct entanglement flows.
+​
+
+Example: Current Prototypes
+Netherlands' Quantum Internet Alliance tests 10+ node metro networks with repeaters;
+China's Micius satellites link ground QKD over 7,600 km; U.S. efforts like NIST's aim for city-scale by 2030.
+
+​
+How It Works
+Link layer: Generate elementary entanglement over short segments.
+Network layer: Repeaters purify and swap to create long-distance pairs.
+Transport layer: Protocols like DLCZ route and manage sessions.
+Application: Use entanglement for QKD, teleportation, or cloud quantum access; classical channels coordinate. Full rollout requires error-corrected links by late 2020s
