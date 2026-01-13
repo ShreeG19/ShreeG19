@@ -1,0 +1,40 @@
+Hybrid models combine quantum cryptography (like QKD for key generation) with post-quantum cryptography 
+(PQC, e.g., lattice-based algorithms resistant to quantum attacks) to provide layered security during the 
+transition to full quantum-safe systems. They leverage QKD's information-theoretic security with PQC's 
+computational hardness, mitigating risks from "harvest now, decrypt later" attacks.
+
+​
+Definition
+
+Hybrid schemes integrate quantum methods (QKD, entanglement) for keys with classical/PQC algorithms 
+(Kyber/ML-KEM, Dilithium) in protocols like TLS, using dual key exchanges or signatures for defense-in-depth.
+Examples include QKD-derived keys encrypting PQC handshakes or parallel classical+PQC encapsulations.
+
+​
+Purpose
+
+These models bridge current infrastructure to quantum threats: QKD offers provable security but needs hardware, 
+while PQC runs on classical systems but relies on unproven assumptions; hybrids ensure resilience if one fails. 
+They enable crypto-agility for standards like NIST's PQC suite.
+
+​
+Benefits Over Pure Approaches
+
+Hybrids resist both quantum computers (via PQC/QKD) and classical exploits (via proven classical/PQC combos), 
+with minimal performance overhead in protocols like HPKE or MLS. They support seamless migration, e.g., ECDH + Kyber in TLS 1.3.
+
+​
+Examples
+     Model Type	            Components	                        Use Case
+     QKD + PQC	        QKD keys + Kyber KEM	              Secure data links​
+   Classical + PQC	       ECDH + ML-KEM               encapsulation	TLS handshakes​
+   Dual Signatures	     ECDSA + Dilithium	              Firmware verification
+
+​
+How They Work
+
+Key Exchange: Perform parallel exchanges (e.g., ECDH and Kyber), derive shared secret via KDF from both outputs.​
+
+Signatures: Sign message with classical and PQC schemes; verify both.
+
+QKD Integration: Use QKD for session keys encrypting PQC-wrapped traffic. Deploy in VPNs/TLS with fallback if one fails; ENISA/NIST recommend for transition
